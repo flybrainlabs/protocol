@@ -1,7 +1,7 @@
 {
   "schema": "flybrain-component-v1",
   "repository": "protocol",
-  "owner": "flybrainwork",
+  "owner": "flybrainlabs",
   "workspaceFiles": {
     "crates/campaign-core/Cargo.toml": "crates/campaign-core/Cargo.toml",
     "crates/campaign-core/src/lib.rs": "crates/campaign-core/src/lib.rs",
@@ -46,5 +46,6 @@
     "tools/target_protocol_v2.py": "tools/target_protocol_v2.py",
     "web/data/chain-config.json": "web/data/chain-config.json",
     "web/data/economic-policy-v2.json": "web/data/economic-policy-v2.json"
-  }
+  },
+  "project": "flybrainlabs"
 }
