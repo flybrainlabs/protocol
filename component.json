@@ -7,6 +7,8 @@
     "crates/campaign-core/src/lib.rs": "crates/campaign-core/src/lib.rs",
     "crates/economic-core/Cargo.toml": "crates/economic-core/Cargo.toml",
     "crates/economic-core/src/lib.rs": "crates/economic-core/src/lib.rs",
+    "crates/mining-v3/Cargo.toml": "crates/mining-v3/Cargo.toml",
+    "crates/mining-v3/src/lib.rs": "crates/mining-v3/src/lib.rs",
     "crates/receipt-v1/Cargo.toml": "crates/receipt-v1/Cargo.toml",
     "crates/receipt-v1/examples/golden.rs": "crates/receipt-v1/examples/golden.rs",
     "crates/receipt-v1/src/lib.rs": "crates/receipt-v1/src/lib.rs",
