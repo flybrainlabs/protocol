@@ -1,0 +1,85 @@
+{
+  "scope": "canonical fixture only; not a real scientific or chain acceptance",
+  "vectors": [
+    {
+      "manifest": {
+        "schema": "flybrain-evidence-manifest-v1",
+        "kind": "community",
+        "genesisHash": "11111111111111111111111111111111",
+        "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "policyHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "economicTaskId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "unitId": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "contributionId": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "authorizationId": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "evaluatorVersion": "authorized-community-work-order-v1",
+        "judgement": "accepted",
+        "privateCommitments": [
+          {
+            "schema": "randomized-sha256-commitment-v1",
+            "root": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+          }
+        ],
+        "publicEvidence": []
+      },
+      "root": "da04e9b3c925a95bad68c632b25ead53c66e4e593a6e1c8906904e9e5f2089cc",
+      "slotKey": "[\"Flybrain/EconomicSlotKey/v1\",\"11111111111111111111111111111111\",\"BPFLoaderUpgradeab1e11111111111111111111111\",\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"community\",\"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\"]"
+    },
+    {
+      "manifest": {
+        "schema": "flybrain-evidence-manifest-v1",
+        "kind": "verification",
+        "genesisHash": "11111111111111111111111111111111",
+        "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "policyHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "economicTaskId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "unitId": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "contributionId": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "authorizationId": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "evaluatorVersion": "authorized-community-work-order-v1",
+        "judgement": "correct-rejection",
+        "privateCommitments": [
+          {
+            "schema": "randomized-sha256-commitment-v1",
+            "root": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+          }
+        ],
+        "publicEvidence": []
+      },
+      "root": "78a02e568e25e119bc242f9396beeba706aad3c97a850b313973da14d3ae6e77",
+      "slotKey": "[\"Flybrain/EconomicSlotKey/v1\",\"11111111111111111111111111111111\",\"BPFLoaderUpgradeab1e11111111111111111111111\",\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"verification\",\"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\"]"
+    },
+    {
+      "manifest": {
+        "schema": "flybrain-evidence-manifest-v1",
+        "kind": "discovery",
+        "genesisHash": "11111111111111111111111111111111",
+        "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "policyHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "economicTaskId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "unitId": "0000000000000000000000000000000000000000000000000000000000000000",
+        "contributionId": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "authorizationId": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "evaluatorVersion": "authorized-community-work-order-v1",
+        "judgement": "accepted",
+        "privateCommitments": [
+          {
+            "schema": "randomized-sha256-commitment-v1",
+            "root": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+          }
+        ],
+        "publicEvidence": [],
+        "acceptanceId": "1111111111111111111111111111111111111111111111111111111111111111",
+        "goalId": "2222222222222222222222222222222222222222222222222222222222222222",
+        "roundId": "3333333333333333333333333333333333333333333333333333333333333333",
+        "claimId": "4444444444444444444444444444444444444444444444444444444444444444",
+        "readoutId": "5555555555555555555555555555555555555555555555555555555555555555",
+        "modelRoot": "6666666666666666666666666666666666666666666666666666666666666666",
+        "graphRoot": "7777777777777777777777777777777777777777777777777777777777777777",
+        "parameterProfileHash": "8888888888888888888888888888888888888888888888888888888888888888"
+      },
+      "root": "7f8554580edf641d579308a8d3f4e1c0db0f6d75d0a4898a996d30ad70aeae38",
+      "slotKey": "[\"Flybrain/EconomicSlotKey/v1\",\"11111111111111111111111111111111\",\"BPFLoaderUpgradeab1e11111111111111111111111\",\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"discovery\",\"0000000000000000000000000000000000000000000000000000000000000000\"]"
+    }
+  ]
+}

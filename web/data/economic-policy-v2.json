@@ -1,0 +1,21 @@
+{
+  "schema": "flybrain-economic-policy-v2",
+  "version": 2,
+  "policyId": "flybrain-global-supply-v2-20261011",
+  "asset": {"symbol": "FLY", "decimals": 8, "chain": "solana", "genesisHash": null, "mint": null, "programId": null, "vaults": null, "issuance": "identity-required", "finality": "finalized"},
+  "capAtoms": "31183324300000000",
+  "pools": {"miners": "22451993600000000", "verifiers": "5612998400000000", "community": "3118332300000000"},
+  "issuance": "single-global-atomic-vault-issuance",
+  "allocation": "fixed-task-atoms-v2",
+  "stages": [],
+  "discovery": "earliest-eligible-verified-commitment",
+  "coverage": "published-unit-and-budget-required",
+  "verification": "authorized-complete-replay-including-correct-rejection",
+  "readout": "separate-authorized-work-item",
+  "refund": "unencumbered-remainder-only-fixed-recipient",
+  "history": "frozen-v1-contracts-retained-no-automatic-migration",
+  "paymentEnabled": false,
+  "rewardEnabled": false,
+  "planState": "publication-required",
+  "exchangeRate": null
+}

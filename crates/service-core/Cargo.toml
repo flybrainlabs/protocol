@@ -1,0 +1,11 @@
+[package]
+name = "flypow-service-core"
+version = "0.1.0"
+edition = "2021"
+publish = false
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+borsh = { version = "=1.8.1", features = ["derive"] }
+sha2 = "0.10.9"
+[dev-dependencies]
+serde_json = "1"

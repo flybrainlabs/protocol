@@ -1,0 +1,580 @@
+{
+  "schema": "flybrain-submission-coordinator-fixture-v1",
+  "source": "Public signed development round with an actually replayed controlled-input manifest; synthetic client tests only",
+  "round": {
+    "entropySource": "authority-csprng-dev-v1",
+    "goal": {
+      "calibrationHash": "2f2787c6c024755a8f487c08a10a0366459488fbb6b9c985f51930ead13fbdc9",
+      "dataset": "male-cns:v1.0",
+      "description": "搜索单步低成本输入，检验新的固定下游细胞组（连接权重排序第1至12位，排除既有目标细胞）的双窗口响应和32个非目标细胞的选择性。",
+      "evaluatorVersion": "full-events-selective-v1",
+      "family": "evoked-selective-response-v1",
+      "generatorVersion": "rect-domain-v1",
+      "graphRoot": "6c42f6ff8e2198aca17a765acae0475b490abb0169d615e32b71c976f563deb4",
+      "inputDomain": {
+        "currents": [
+          25,
+          50,
+          75,
+          100,
+          125,
+          150
+        ],
+        "durations": [
+          1
+        ],
+        "starts": [
+          0,
+          32,
+          96
+        ]
+      },
+      "inputDomainHash": "44d92f27f2e1c7d3e09d84997cf35eb1d28ae9f01ff73c586731a338d6222fba",
+      "maxCandidateBytes": 268435456,
+      "maxStimulusCost": 150,
+      "maxTrialBytes": 134217728,
+      "modelDataRoot": "3eb2262298c374c47fcbd13c16bec53bc20ffb837da6c46276ea129bd448874f",
+      "modelRoot": "7326a0eadad0095312048927c610272dbd5279f9a906462915bea79f3bef19c1",
+      "neuronCount": 165122,
+      "offTargetCoverage": "固定32个按bodyId哈希抽样的非目标细胞；局部评估，不代表全脑选择性。",
+      "offTargetSet": [
+        {
+          "bodyId": "14656",
+          "modelIndex": 4306
+        },
+        {
+          "bodyId": "15134",
+          "modelIndex": 4740
+        },
+        {
+          "bodyId": "16570",
+          "modelIndex": 6025
+        },
+        {
+          "bodyId": "25025",
+          "modelIndex": 13585
+        },
+        {
+          "bodyId": "32744",
+          "modelIndex": 20421
+        },
+        {
+          "bodyId": "44270",
+          "modelIndex": 30598
+        },
+        {
+          "bodyId": "54496",
+          "modelIndex": 39449
+        },
+        {
+          "bodyId": "57957",
+          "modelIndex": 42375
+        },
+        {
+          "bodyId": "64479",
+          "modelIndex": 47818
+        },
+        {
+          "bodyId": "70348",
+          "modelIndex": 52630
+        },
+        {
+          "bodyId": "72516",
+          "modelIndex": 54387
+        },
+        {
+          "bodyId": "73708",
+          "modelIndex": 55322
+        },
+        {
+          "bodyId": "75047",
+          "modelIndex": 56420
+        },
+        {
+          "bodyId": "77560",
+          "modelIndex": 58487
+        },
+        {
+          "bodyId": "94151",
+          "modelIndex": 71366
+        },
+        {
+          "bodyId": "97435",
+          "modelIndex": 73823
+        },
+        {
+          "bodyId": "103661",
+          "modelIndex": 78375
+        },
+        {
+          "bodyId": "104877",
+          "modelIndex": 79265
+        },
+        {
+          "bodyId": "106908",
+          "modelIndex": 80726
+        },
+        {
+          "bodyId": "121349",
+          "modelIndex": 90803
+        },
+        {
+          "bodyId": "126846",
+          "modelIndex": 94358
+        },
+        {
+          "bodyId": "139302",
+          "modelIndex": 101501
+        },
+        {
+          "bodyId": "142852",
+          "modelIndex": 103243
+        },
+        {
+          "bodyId": "159746",
+          "modelIndex": 109994
+        },
+        {
+          "bodyId": "173712",
+          "modelIndex": 113624
+        },
+        {
+          "bodyId": "175437",
+          "modelIndex": 114034
+        },
+        {
+          "bodyId": "189291",
+          "modelIndex": 116613
+        },
+        {
+          "bodyId": "514486",
+          "modelIndex": 125793
+        },
+        {
+          "bodyId": "515155",
+          "modelIndex": 126169
+        },
+        {
+          "bodyId": "557633",
+          "modelIndex": 141197
+        },
+        {
+          "bodyId": "803632",
+          "modelIndex": 145520
+        },
+        {
+          "bodyId": "820872",
+          "modelIndex": 157744
+        }
+      ],
+      "offTargetSetRoot": "4ab487bfd88fccec79cb28a4531469ddf0b622dc7f75f7aa5988a96d8f3d9b0a",
+      "parameterProfileHash": "8d4763cb7b212691bd55b030ccaeb37f972410c22a6dfdc693e70b3ad7a6b71c",
+      "parameterVersion": "lif-point-v0-dev",
+      "registryRoot": "e04acf725b481fa69e56ad8f3ca7bd32d1467b959f475618543a649f07e1d112",
+      "responseSet": [
+        {
+          "bodyId": "10097",
+          "modelIndex": 83
+        },
+        {
+          "bodyId": "10115",
+          "modelIndex": 101
+        },
+        {
+          "bodyId": "10528",
+          "modelIndex": 490
+        },
+        {
+          "bodyId": "11278",
+          "modelIndex": 1186
+        },
+        {
+          "bodyId": "11808",
+          "modelIndex": 1687
+        },
+        {
+          "bodyId": "11980",
+          "modelIndex": 1852
+        },
+        {
+          "bodyId": "12437",
+          "modelIndex": 2280
+        },
+        {
+          "bodyId": "14937",
+          "modelIndex": 4560
+        },
+        {
+          "bodyId": "47042",
+          "modelIndex": 33024
+        },
+        {
+          "bodyId": "512841",
+          "modelIndex": 124864
+        },
+        {
+          "bodyId": "512845",
+          "modelIndex": 124867
+        },
+        {
+          "bodyId": "520146",
+          "modelIndex": 129118
+        }
+      ],
+      "responseSetRoot": "5e372d5a8a42394efb67be7c60fd3a728ae0ca32446883e45fead2b810450fd4",
+      "schema": "flypow-goal-v2",
+      "sourceRoot": "1d4f79ddd39d277a7cd1cbb6427685e7e484da5de9344b968dbde7eb36e855cb",
+      "steps": 256,
+      "stimulusSet": [
+        {
+          "bodyId": "16789",
+          "modelIndex": 6222
+        },
+        {
+          "bodyId": "16961",
+          "modelIndex": 6375
+        },
+        {
+          "bodyId": "18708",
+          "modelIndex": 7938
+        },
+        {
+          "bodyId": "87973",
+          "modelIndex": 66689
+        }
+      ],
+      "stimulusSetRoot": "78cbdb775b3babb2365f0f3a79745b9b2894b3bc0c59f33ea671875f2df88e8e",
+      "timeStepUs": 1000,
+      "windows": [
+        {
+          "endOffset": 16,
+          "maxOffTarget": 32,
+          "minPositiveCells": 6,
+          "minTargetNet": 24,
+          "selectivityDenominator": 1,
+          "selectivityNumerator": 1,
+          "startOffset": 0
+        },
+        {
+          "endOffset": 48,
+          "maxOffTarget": 104,
+          "minPositiveCells": 6,
+          "minTargetNet": 64,
+          "selectivityDenominator": 1,
+          "selectivityNumerator": 1,
+          "startOffset": 16
+        }
+      ]
+    },
+    "pre": {
+      "appliedProfile": "comparable-r2-v1",
+      "authorityId": "dd7677f0cac39739793340da3d79545ee4f5c4b523600920ae6d24045d6bc7c0",
+      "calibrationHash": "2f2787c6c024755a8f487c08a10a0366459488fbb6b9c985f51930ead13fbdc9",
+      "campaignId": "three-calibrated-goal-cloud-test-20261011",
+      "claimDeadline": 1791733121,
+      "difficultyMicros": 1000000,
+      "difficultyPolicy": {
+        "comparableFamily": {
+          "descriptor": {
+            "evaluatorVersion": "full-events-selective-v1",
+            "graphRoot": "6c42f6ff8e2198aca17a765acae0475b490abb0169d615e32b71c976f563deb4",
+            "levels": [
+              {
+                "difficultyMicros": 1000000,
+                "requiredBackgrounds": 2
+              },
+              {
+                "difficultyMicros": 2272494,
+                "requiredBackgrounds": 4
+              }
+            ],
+            "limits": [
+              "24 disjoint new 12-cell downstream populations, outside all previous response/stimulus/off-target sets; predicates preregistered before outcomes.",
+              "Complete event kernels reuse the same model and inputs; independent predicates and new populations are not new biological discoveries or proof of independent goals.",
+              "Finite real training/held-out evidence: 20 inputs per goal. R2/R4 effective; R8/R16 disabled.",
+              "Cold-start family: never import old winner samples. Difficulty feedback still needs 16 real comparable successful rounds.",
+              "Solved goals are never renamed or repeated. Future supply requires a new calibrated, signed plan."
+            ],
+            "members": [
+              {
+                "calibrationHash": "2f2787c6c024755a8f487c08a10a0366459488fbb6b9c985f51930ead13fbdc9",
+                "goalId": "7959e04b007b482813342a0a3398149483a69a51c6d2aa2e90b3286bc6d4507a",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "57f746a05da94452d7962888ef2532bae64b5f4b02ef3d94561b7d12febfd3a6",
+                "goalId": "0a38233f4d0d54e5ca26cc22d6cdba28ac5840a0970c946a87a964f7cc46a7e9",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "7b228114b5bc4cc3082fe6b045b21d7fb68f608f18f9291e57c55d07e7a23b6a",
+                "goalId": "6ad6a16b514cf4b40dac275d229f696005bdafc38a28fff7b72ca7ac0a5b388a",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "2754e67ddd3d751ec5247568cff895fe81cbe001dfdb53c88743471ed0f412fd",
+                "goalId": "d534f5755838b3f1d7494ab36365d3a98b55ccac534b8b685a7882a0fa85e538",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "a2fc82071aa4ee819f79c718aeb0165d7fe9d65d2d76cd473bbb35b361bcfc9d",
+                "goalId": "12c9980c45552cd1aaa270738e2f85194aacbbe80449d8b2f94b78711430b7a9",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "e3ad63fffc5f5e5b14e41629072ac72519164b12be84bc9495354550c9ab99c1",
+                "goalId": "675f351fa9a2fa5962a3a18a4850d5077512d82deb3d700c2326e0d2b522adea",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "51348f815071689a9a1abbbc2f90d63074f8ff12d844b21c0538ba166e12fa97",
+                "goalId": "0094368048df98de3a8a2357e5a6e905eb425c3ab7ec3f41d808ae199bca0817",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "72c92d5a7c80fe597377b0e55067db06be11a25ab85bcdf2704c892304ff03c8",
+                "goalId": "2f32bdc34d1151eab4341aba882321021ccfaf6d31415d9de84498fd6f10bf99",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "23a13f9aba73e21cdcfc166b7af49a410bcff9081021e070f9a67a4c7d590cfc",
+                "goalId": "0b8d998d0b0635b1b25f3ccaf6fb014421f2851da83399dca17a261a1b8bb75c",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "f037d780d0a09faf2660e195beaebd350800cf8856e52844f4d30f7b33c31a58",
+                "goalId": "b00eb619cc9db7c727fea9b8cbcf7ea9621463efb8116c6f1c02d37df3973df3",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "d61b761ffaecf1370482419537cf57b3c1d6ba71069bd71494c769ec83edd36f",
+                "goalId": "9d34978db04aefb34f6f6393f5e16c8738f337fa0b9bee69ca0b32dc2e6c2382",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "7596ceffbb36a4eae76664bf77528950de37a504d0dcaae21aec0e89d58d87d8",
+                "goalId": "83ad498eea0a1a50a4a369c14a1f2b0dbdc5c7210dc715bec2ac3c31195a424b",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "3a493238bfb431f01b064560a9d30a8186c76c5a6635dee764a6e66b7f980d4d",
+                "goalId": "c0dac2ba90d2793238e96e6ef14bfafc9f9c3b645df14c36a089fe82cbb4a48b",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "61bde561bd6e770904cc3e82bd2e2ca2a5f03240238dd291fdd2df966189d046",
+                "goalId": "35b4fa2416460413b238de184e2898597ff429db3e93d6e29c0f35a5ec553856",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "c347889b084115345e79ddf92c430af8915182b3a7394244ae2ba4e5a4bf059c",
+                "goalId": "2f8e88cec9f31f155332d5a1a16f76cd0bd48d2dc89b9095d9e5d7a0484953b5",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "84d5e1b13d229e4cf1fed32b2b3929814ffc588d0f69aba449010bfa0246b653",
+                "goalId": "828b0950f53ab14ace30cfae3887826be1b6d168b575f3b411bc7ff9557527fd",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "2ee315fc0b524a87c35af1c2dab54caa314d1802cb1b4f616e132fc09bac31f9",
+                "goalId": "a3de48378b59f2d08106e248720ec825f0adbb739d410d1c421893186dfd181a",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "8e7972d13015455849466d88e7eae4c42cd7b16bb8a4dddc471ff041f5e4f833",
+                "goalId": "6ff44314a9f030aa9d334561a0690fb0cf3f5e3324eca89fdd1b29ee3d952ad2",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "b3f5b61c9f4f92f78081403da6debcc03b3c6f0a1ea05dce62e3183e6521ac6a",
+                "goalId": "0927e593c6bd4833625f936938085ed7ef1a8fb770f7d714045bf8b2a950feeb",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "16b2908c7bc755187832fee96264b8f25aadd73aa7639c3d9431c1118a2e9da8",
+                "goalId": "d3c0c60a2b6a464c088f1e94137a8e26eb54bf2f2d2ed8db76c3b2393075c5d6",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "2c2f799b0e91dc0bfea4080678611495d546bee5b078f4b570fa50e502b0461c",
+                "goalId": "91c8ab901b12ae85010dae28cb9538209883930f03c9c69af3bc421649ff71bd",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "681573f08ffb9da1de044e55723defb82c625d72b3e456aee4a3736574cf70c1",
+                "goalId": "17fb21fd863479db9ade9545f0805bbc162196d1bd7d4df3e2c6afbe3279dcba",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "12deedc2304e4dfcef841f639ba61bbcac8b5bef6cef2b45fc8b50e3f1698a63",
+                "goalId": "14e0c8c2ef50240800c541a4dbe72b0c42757a32be38f0a4e00640d8db87b747",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              },
+              {
+                "calibrationHash": "c65f410f05f114cb4d3cb5d840547931070c75ee440d142e533bcf79b893f85c",
+                "goalId": "1ac61055bdaa838d9f809726fc1147a39ddd5cff043d11c6cb80efa4bad054e1",
+                "normalizationDenominator": 46337,
+                "normalizationNumerator": 46337
+              }
+            ],
+            "modelRoot": "7326a0eadad0095312048927c610272dbd5279f9a906462915bea79f3bef19c1",
+            "normalizationVersion": "reference-work-r2-ratio-v1",
+            "parameterProfileHash": "8d4763cb7b212691bd55b030ccaeb37f972410c22a6dfdc693e70b3ad7a6b71c",
+            "preregistrationHash": "2f4ac438b9eec20c18fcfdc267e544502f67b264b868cbfae1a9b0f9d91f3616",
+            "referenceGoalId": "7959e04b007b482813342a0a3398149483a69a51c6d2aa2e90b3286bc6d4507a",
+            "revision": 1,
+            "schema": "flypow-comparable-difficulty-family-v1"
+          },
+          "familyId": "558214a3e0d7075d336ce9fc40ac4b4258f1004c53eb0010b707fad69fdf7150",
+          "normalizationDenominator": 46337,
+          "normalizationNumerator": 46337
+        },
+        "controller": "ewma-fixed-point-bounded-v2",
+        "maxQueue": 4,
+        "minSamples": 16,
+        "perIdentityClaims": 2,
+        "quorum": 2,
+        "revealSeconds": 1800,
+        "schema": "flypow-difficulty-policy-v2",
+        "searchSeconds": 21600,
+        "tauSeconds": 300,
+        "verificationSeconds": 3600,
+        "verifierKeys": [
+          "5dde79cb92a5f2072958be5e58c22820059fcf580701e3a6aed17437d790abe8",
+          "d398071415c7d633354cfac94a94d831b5be6a4c209ef4955178df234272d1f6",
+          "10e1eb915c7f61bd5830fbbd6afaf5cab6627109485d7f064ce58a47390289a0"
+        ]
+      },
+      "difficultyPolicyHash": "8441b5e159cd97a74b5af95402daf4b4d24d6bf446fa2c7c38b1ea69f9b475b1",
+      "evaluatorVersion": "full-events-selective-v1",
+      "goalDefinitionHash": "7959e04b007b482813342a0a3398149483a69a51c6d2aa2e90b3286bc6d4507a",
+      "goalId": "7959e04b007b482813342a0a3398149483a69a51c6d2aa2e90b3286bc6d4507a",
+      "graphRoot": "6c42f6ff8e2198aca17a765acae0475b490abb0169d615e32b71c976f563deb4",
+      "inputDomainHash": "44d92f27f2e1c7d3e09d84997cf35eb1d28ae9f01ff73c586731a338d6222fba",
+      "modelRoot": "7326a0eadad0095312048927c610272dbd5279f9a906462915bea79f3bef19c1",
+      "networkId": "flypow-public-development-20261011",
+      "openedAt": 1791711521,
+      "parameterProfileHash": "8d4763cb7b212691bd55b030ccaeb37f972410c22a6dfdc693e70b3ad7a6b71c",
+      "previousRoundDigest": "edc7b355f4bf5fde27f699bca52bc8e3ba11e97dba42ddc7f58c167b056d3be1",
+      "protocolVersion": 2,
+      "requiredBackgrounds": 2,
+      "revealDeadline": 1791734921,
+      "roundSequence": 4,
+      "verificationDeadline": 1791738521,
+      "verificationPolicy": {
+        "leaseSeconds": 300,
+        "maxCandidateBytes": 268435456,
+        "quorum": 2,
+        "verifiers": [
+          "5dde79cb92a5f2072958be5e58c22820059fcf580701e3a6aed17437d790abe8",
+          "d398071415c7d633354cfac94a94d831b5be6a4c209ef4955178df234272d1f6",
+          "10e1eb915c7f61bd5830fbbd6afaf5cab6627109485d7f064ce58a47390289a0"
+        ],
+        "version": "authorized-two-of-three-full-replay-v2"
+      }
+    },
+    "preRoundSpecHash": "60f631e4289c2b49ee80bc6ff80af0a978b7e5d267c5b634fb7ef0c97560c035",
+    "roundEntropy": "819a9e30f94f81228bf584b042b171bd98d0cdf81233aa53c918beb9e3cece15",
+    "roundId": "e73c5486747a480193199c7d656663512ac3fdc55f7b4f3454bc5278966b2810",
+    "seedDerivationVersion": "sha256-pre-entropy-u32le-u64le-v1",
+    "seeds": [
+      "13010951161f267f",
+      "c340c810a519da3f",
+      "28add4d99bfb1c68",
+      "4ad3ca077a1fa38e"
+    ],
+    "signature": "463803dd623c105e3987d791d211202065cb0a8aeb44cb8a407c00ce1b99bf71151f7aed8d7e7824ae04cc819ad035467e22dc0f8902a4d823ed5428e4fe5009",
+    "signedRevision": 1
+  },
+  "manifest": {
+    "schema": "flypow-candidate-manifest-v2",
+    "roundId": "e73c5486747a480193199c7d656663512ac3fdc55f7b4f3454bc5278966b2810",
+    "goalId": "7959e04b007b482813342a0a3398149483a69a51c6d2aa2e90b3286bc6d4507a",
+    "candidateId": "874cae2d364b0fc22fed97619609f4b7f436f0ae1d0b4393f23e2b7755447854",
+    "input": {
+      "current": 150,
+      "endStep": 1,
+      "startStep": 0,
+      "stimulatedBodyId": "87973"
+    },
+    "trials": [
+      {
+        "trialId": "320311bbd31338708cfc27bfbb727f753fb70e0696a2b7fce25e72deae4a9150",
+        "repeatIndex": 0,
+        "seedHex": "13010951161f267f",
+        "resultRoot": "2ad000916a18ed2f121de0e23ac22680e1bb8ddc6bec6e97cdfc832442ebb80c",
+        "bytes": 33953656,
+        "metrics": {
+          "baselineSpikes": 0,
+          "passed": true,
+          "stimulusCost": 150,
+          "windows": [
+            {
+              "offTargetAbs": 25,
+              "passed": true,
+              "positiveCells": 12,
+              "targetNet": 55
+            },
+            {
+              "offTargetAbs": 102,
+              "passed": true,
+              "positiveCells": 12,
+              "targetNet": 125
+            }
+          ]
+        }
+      },
+      {
+        "trialId": "05f11698097c9b3b238b4d804508ee887c02937ddeb933b894bb9ea30f57ba5e",
+        "repeatIndex": 1,
+        "seedHex": "c340c810a519da3f",
+        "resultRoot": "4b8286f62014cfb4a616ae6b0b21dc6acab5c385b9313fc3f5e19433a8165b40",
+        "bytes": 34011296,
+        "metrics": {
+          "baselineSpikes": 0,
+          "passed": true,
+          "stimulusCost": 150,
+          "windows": [
+            {
+              "offTargetAbs": 25,
+              "passed": true,
+              "positiveCells": 12,
+              "targetNet": 55
+            },
+            {
+              "offTargetAbs": 101,
+              "passed": true,
+              "positiveCells": 12,
+              "targetNet": 125
+            }
+          ]
+        }
+      }
+    ],
+    "goalResultRoot": "3877a0968f7ff2bbf569af45fd354874b75daeeb93b78dfb7e4a0a4a0325422d"
+  }
+}
