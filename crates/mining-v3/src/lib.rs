@@ -195,3 +195,4 @@ mod tests {
         record.complete_trials=1;assert!(record.encode().is_err());
     }
 }
+pub mod task_factory_v4;

@@ -47,7 +47,8 @@
     "tests/vectors/target-v2.json": "tests/vectors/target-v2.json",
     "tools/target_protocol_v2.py": "tools/target_protocol_v2.py",
     "web/data/chain-config.json": "web/data/chain-config.json",
-    "web/data/economic-policy-v2.json": "web/data/economic-policy-v2.json"
+    "web/data/economic-policy-v2.json": "web/data/economic-policy-v2.json",
+    "crates/mining-v3/src/task_factory_v4.rs": "crates/mining-v3/src/task_factory_v4.rs"
   },
   "project": "flybrainlabs"
 }
