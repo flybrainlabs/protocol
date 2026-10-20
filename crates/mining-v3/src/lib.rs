@@ -1,6 +1,7 @@
 //! Versioned financial authorization and canonical 1024-byte mining summaries.
 //! Chain ownership, signatures and transfers are enforced by the SBF adapter.
 use borsh::{BorshDeserialize, BorshSerialize};
+pub mod scientific_round_v5;
 
 pub type Key = [u8; 32];
 pub type Result<T> = std::result::Result<T, &'static str>;

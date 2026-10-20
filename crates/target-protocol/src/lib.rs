@@ -93,6 +93,14 @@ pub struct TrialMetrics {pub windows:Vec<WindowMetrics>,pub stimulus_cost:u64,pu
 
 /// Inspect ALL sorted full archive events, independent of the display trace.
 pub fn evaluate(goal:&GoalSpec,input:&CandidateInput,bytes:&[u8])->Result<TrialMetrics>{
+    evaluate_coverage(goal,input,bytes,false)
+}
+/// V5 analysis: every cell outside the frozen response population contributes
+/// to the non-target metric. The legacy V2 readout remains byte compatible.
+pub fn evaluate_complete(goal:&GoalSpec,input:&CandidateInput,bytes:&[u8])->Result<TrialMetrics>{
+    evaluate_coverage(goal,input,bytes,true)
+}
+fn evaluate_coverage(goal:&GoalSpec,input:&CandidateInput,bytes:&[u8],complete:bool)->Result<TrialMetrics>{
     goal.validate()?;let target=goal.validate_input(input)?;
     let u32_at=|at|u32::from_le_bytes(bytes[at..at+4].try_into().unwrap());
     if bytes.len()<480||bytes.len() as u64>goal.max_trial_bytes||&bytes[..8]!=b"FBRP1\0\0\0"||u32_at(8)!=goal.neuron_count||u32_at(12)!=target||u32_at(16)!=goal.steps{return Err("complete FBRP identity/bound required".into());}
@@ -104,11 +112,11 @@ pub fn evaluate(goal:&GoalSpec,input:&CandidateInput,bytes:&[u8])->Result<TrialM
     for (start,len,sign) in [(480,a,-1i64),(480+a*8,b,1)]{
         let mut prior=None;for at in (start..start+len*8).step_by(8){let step=u32_at(at);let index=u32_at(at+4);
             if step>=goal.steps||index>=goal.neuron_count||prior.is_some_and(|p|p>=(step,index)){return Err("event order/duplicate/range".into());}prior=Some((step,index));
-            if sets.contains_key(&index){for (k,w) in goal.windows.iter().enumerate(){if step>=input.end_step+w.start_offset&&step<input.end_step+w.end_offset {*counts[k].entry(index).or_default()+=sign;}}}
+            if complete||sets.contains_key(&index){for (k,w) in goal.windows.iter().enumerate(){if step>=input.end_step+w.start_offset&&step<input.end_step+w.end_offset {*counts[k].entry(index).or_default()+=sign;}}}
         }
     }
     let mut windows=Vec::new();for (w,c) in goal.windows.iter().zip(counts){let mut net=0i64;let mut positive=0u32;let mut off=0u64;
-        for (i,delta) in c {if sets[&i]{net=net.checked_add(delta).ok_or("target sum overflow")?;positive+=u32::from(delta>0);}else{off=off.checked_add(delta.unsigned_abs()).ok_or("off-target overflow")?;}}
+        for (i,delta) in c {if sets.get(&i).copied().unwrap_or(false){net=net.checked_add(delta).ok_or("target sum overflow")?;positive+=u32::from(delta>0);}else{off=off.checked_add(delta.unsigned_abs()).ok_or("off-target overflow")?;}}
         // Zero off-target denominator: positive target response passes selectivity.
         let selective=net>0&&(net as u128)*(w.selectivity_denominator as u128)>=(off as u128)*(w.selectivity_numerator as u128);
         windows.push(WindowMetrics{target_net:net,positive_cells:positive,off_target_abs:off,passed:net>=w.min_target_net&&positive>=w.min_positive_cells&&off<=w.max_off_target&&selective});

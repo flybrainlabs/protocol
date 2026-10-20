@@ -89,3 +89,12 @@ verification. Public receipts are in the contracts repository under
 archives remain outside source repositories. The two-unit acceptance budget is
 complete. Future paid work requires a new prospectively frozen finite plan.
 Actual extension-wallet and physical-device confirmation remain separate gates.
+
+## Scientific round V5
+
+`scientific_round_v5` defines ten prospectively funded contribution places, a
+post-commit chain challenge, category ordering, permanent computation deduplication
+and durable accepted entitlements. Run `cargo test --locked -p flybrainlabs-mining-v3
+--lib` in the assembled workspace. `exact_trial --serve GRAPH MODEL` is the resident
+JSON-lines complete-model executor; `target_trial` remains the legacy dense oracle.
+The V5 non-target readout covers all cells outside the registered response set.
